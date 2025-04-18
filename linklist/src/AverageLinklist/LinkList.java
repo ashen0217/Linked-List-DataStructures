@@ -25,4 +25,12 @@ public class LinkList {
         first = first.next;
         return temp;
     }
+
+    public void displayList(){
+        Link current = first; //in order to start from the begining
+        while(current != null){
+            current.displayDetails(); //print links
+            current = current.next; //move to next link
+        }
+    }
 }
